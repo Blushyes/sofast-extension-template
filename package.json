@@ -1,0 +1,41 @@
+{
+  "name": "sofast-extension-template",
+  "title": "Sofast Extension Template",
+  "author": "Blushyes",
+  "commands": [
+    {
+      "name": "greet",
+      "title": "Greet Someone"
+    },
+    {
+      "name": "sayHello",
+      "title": "Say Hello"
+    }
+  ],
+  "description": "A template for creating a Sofast extension",
+  "categroies": [
+    "template"
+  ],
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "sofast-extensions-test": "^0.1.6",
+    "vue": "^3.4.37"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/node": "^22.7.4",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "glob": "^11.0.0",
+    "rollup-plugin-copy-assets": "^2.0.3",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vue-tsc": "^2.0.29"
+  }
+}
