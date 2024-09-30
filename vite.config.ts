@@ -1,12 +1,11 @@
-import {defineConfig} from 'vite';
+import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import {glob} from 'glob';
+import { glob } from 'glob';
 import path from 'path';
-import {readFileSync, writeFileSync} from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 
-// @ts-ignore
 const getEntryPoints = () => {
-  const entries: any = {};
+  const entries: { [key: string]: string } = {};
   const files = glob.sync('src/*.ts');
 
   files.forEach((file) => {
