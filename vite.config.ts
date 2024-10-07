@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue';
 import { glob } from 'glob';
 import path from 'path';
 import { readFileSync, writeFileSync } from "node:fs";
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 
 const getEntryPoints = () => {
   const entries: { [key: string]: string } = {};
@@ -19,6 +20,8 @@ const getEntryPoints = () => {
 export default defineConfig({
   plugins: [
     vue(),
+
+    cssInjectedByJsPlugin(),
 
     {
       name: 'copy-package-json',
