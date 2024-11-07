@@ -42,13 +42,13 @@ Sofast插件开发模板。
      ]
    }
    ```
-   其中，`command` 是最终要的字段，声明了你这个插件需要注册的所有指令，`name` 字段为这个指令在 `src` 目录下对应的文件名，比如 `name` 为 `sayHello` 时，指令对应的文件为 `src/sayHello.ts`
+   其中，`commands` 是最终要的字段，声明了你这个插件需要注册的所有指令，`name` 字段为这个指令在 `src` 目录下对应的文件名，比如 `name` 为 `sayHello` 时，指令对应的文件为 `src/sayHello.ts`
    
    其他字段说明待完善
 
 1. 接下来运行 `npm run build` 构建项目
 
-1. 得到的 `dist` 文件夹即为我们的插件文件夹（现在还不支持导入压缩包插件）
+1. 得到的 `dist` 文件夹即为我们的插件文件夹
 
 1. 接下来，进入 `Sofast` 中导入插件（注意，`导入插件`是开发者模式，正式加载插件是`添加插件`）即可
 
@@ -59,4 +59,7 @@ Sofast插件开发模板。
 
    现在打开看看
    ![greet](./public/greet.png)
-   
+
+## 插件列表
+
+- [快捷链接导出插件](https://github.com/Blushyes/sofast-quicklinks-export)
