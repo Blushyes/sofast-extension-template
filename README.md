@@ -63,3 +63,7 @@ Sofast插件开发模板。
 ## 插件列表
 
 - [快捷链接导出插件](https://github.com/Blushyes/sofast-quicklinks-export)
+
+## 相关链接
+
+- [使用 Tauri API 示例](https://github.com/Blushyes/sofast-tauri-api-use-example)
