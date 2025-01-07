@@ -60,6 +60,20 @@ Sofast插件开发模板。
    现在打开看看
    ![greet](./public/greet.png)
 
+## 后台指令
+
+当您将某个 `command` 的 `type` 设置为 `background` 时，这个 `command` 将不会在指令列表中显示，而是作为后台指令运行。
+
+```json
+{
+  "name": "nihao",
+  "title": "你好",
+  "type": "background"
+}
+```
+
+目前，后台指令运行的时机仅为如快启动时，后续会增加更多运行时机。
+
 ## 插件列表
 
 - [快捷链接导出插件](https://github.com/Blushyes/sofast-quicklinks-export)
