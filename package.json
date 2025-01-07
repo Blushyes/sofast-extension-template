@@ -10,6 +10,11 @@
     {
       "name": "sayHello",
       "title": "Say Hello"
+    },
+    {
+      "name": "nihao",
+      "title": "你好",
+      "type": "background"
     }
   ],
   "description": "A template for creating a Sofast extension",
