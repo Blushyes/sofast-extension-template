@@ -3,7 +3,6 @@ import vue from '@vitejs/plugin-vue';
 import {glob} from 'glob';
 import path from 'path';
 import {readFileSync, writeFileSync} from "node:fs";
-import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 
 // 读取 package.json
 const packageJson = JSON.parse(readFileSync('package.json', 'utf-8'));
@@ -53,7 +52,7 @@ const initSofastContext = () => {
 export default defineConfig({
   plugins: [
     vue(),
-    cssInjectedByJsPlugin(),
+    // cssInjectedByJsPlugin(),
     initSofastContext(),
     {
       name: 'copy-package-json',
