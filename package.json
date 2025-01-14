@@ -33,7 +33,6 @@
   },
   "dependencies": {
     "sofast-extensions": "^0.2.13",
-    "vite-plugin-css-injected-by-js": "^3.5.2",
     "vue": "^3.4.37"
   },
   "devDependencies": {
