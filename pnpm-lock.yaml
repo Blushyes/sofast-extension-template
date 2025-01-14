@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       sofast-extensions:
-        specifier: ^0.2.13
-        version: 0.2.13(@tauri-apps/api@2.2.0)(vue@3.5.13(typescript@5.7.3))
+        specifier: 0.2.14
+        version: 0.2.14(@tauri-apps/api@2.2.0)(vue@3.5.13(typescript@5.7.3))
       vue:
         specifier: ^3.4.37
         version: 3.5.13(typescript@5.7.3)
@@ -836,8 +836,8 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  sofast-extensions@0.2.13:
-    resolution: {integrity: sha512-3kw8PIHesCZGgONEeMEW/G1TEHabXKe481y1uamYY8+0BuGx/yBsAFad9lim0eeg5gBxnRCqAU+HRdZVZqxs9Q==}
+  sofast-extensions@0.2.14:
+    resolution: {integrity: sha512-x9H+0BBYtMWjefqxehV9BEXxeUCB0UkAZmnGAgOHTvbA5sDaUXg2Yo4xwPzqCa/ZWkGXbUD7ywFtSyXROoXbkw==}
     peerDependencies:
       '@tauri-apps/api': '>2.0.0-rc.4'
 
@@ -1681,7 +1681,7 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  sofast-extensions@0.2.13(@tauri-apps/api@2.2.0)(vue@3.5.13(typescript@5.7.3)):
+  sofast-extensions@0.2.14(@tauri-apps/api@2.2.0)(vue@3.5.13(typescript@5.7.3)):
     dependencies:
       '@tauri-apps/api': 2.2.0
       '@tauri-apps/plugin-notification': 2.2.0

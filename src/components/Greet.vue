@@ -10,11 +10,35 @@
 
 <script setup lang="ts">
 import {onMounted, ref} from "vue";
-import {watchSearchContent} from "sofast-extensions";
+import {listenEvent, showDialog, watchSearchContent} from "sofast-extensions";
 
 const output = ref('')
 
 onMounted(() => {
+  listenEvent('keydown', (e) => {
+    console.log('e:', e)
+    if (e.key === 'Enter') {
+      showDialog({
+        title: `一起来打个招呼吧？`,
+        subtitle: '为什么要打招呼',
+        buttons: [
+          {
+            text: '不知道',
+            type: 'shallow'
+          },
+          {
+            text: '我就不',
+            type: 'delete',
+            onClick: () => {
+              (async () => {
+                console.log('是的')
+              })()
+            }
+          }
+        ]
+      })
+    }
+  })
   watchSearchContent(v => {
     output.value = v
   })

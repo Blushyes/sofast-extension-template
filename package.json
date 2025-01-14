@@ -32,7 +32,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "sofast-extensions": "^0.2.13",
+    "sofast-extensions": "0.2.14",
     "vue": "^3.4.37"
   },
   "devDependencies": {
