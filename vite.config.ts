@@ -23,32 +23,6 @@ const getEntryPoints = () => {
   return entries;
 };
 
-const initSofastContext = () => {
-  return {
-    name: 'inject-global-object',
-    transform(code: string, id: string) {
-      const fileName = path.basename(id, '.ts');
-      const command = packageJson.commands.find((cmd: any) => cmd.name === fileName);
-
-      if (command) {
-        const type = command.type || 'page'; // 默认为 page 类型
-        const injectedCode = `
-          globalThis.__SOFAST__ = {
-            type: '${type}'
-          };
-          
-          ${code}
-        `;
-        return {
-          code: injectedCode,
-          map: null
-        };
-      }
-      return null;
-    }
-  };
-};
-
 export default defineConfig({
   plugins: [
     vue(),
