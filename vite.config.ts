@@ -53,7 +53,7 @@ export default defineConfig({
   plugins: [
     vue(),
     // cssInjectedByJsPlugin(),
-    initSofastContext(),
+    // initSofastContext(),
     {
       name: 'copy-package-json',
       writeBundle() {
